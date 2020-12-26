@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.miwok.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/welcome_back"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="20sp"/>
+
+
+    <TextView
+        android:id="@+id/numbers"
+        style="@style/CategoryStyle"
+        android:background="@drawable/number_button"
+        android:onClick="OpenNumbersActivity"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/family"
+        style="@style/CategoryStyle"
+        android:background="@drawable/family_button"
+        android:onClick="OpenFamilyActivity"
+        android:layout_weight="1"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/colors"
+        style="@style/CategoryStyle"
+        android:background="@drawable/colors_button"
+        android:onClick="OpenColorsActivity"
+        android:layout_weight="1"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/phrases"
+        style="@style/CategoryStyle"
+        android:background="@drawable/phrases_button"
+        android:onClick="OpenPhrasesActivity"
+        android:layout_weight="1"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="38sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
